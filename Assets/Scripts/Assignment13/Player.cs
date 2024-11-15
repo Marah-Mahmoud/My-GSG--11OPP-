@@ -23,7 +23,7 @@ public class Player
 
     public void Heal(bool fullRestore)
     {
-        if (fullRestore == true)
+        if (fullRestore)
         {
             health = 100;
         }
