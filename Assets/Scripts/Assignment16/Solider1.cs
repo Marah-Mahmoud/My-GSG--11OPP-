@@ -2,15 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace ass14
-{
-public class Character : MonoBehaviour
+public class Solider1 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        // string characterName = "Zarifeh";
-        // int characterHealth = 100;
+        
     }
 
     // Update is called once per frame
@@ -18,5 +15,4 @@ public class Character : MonoBehaviour
     {
         
     }
-}
 }
