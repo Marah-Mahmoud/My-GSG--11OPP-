@@ -4,19 +4,33 @@ using UnityEngine;
 
 namespace ass14
 {
-public class Character : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
+    public class Character
     {
-        // string characterName = "Zarifeh";
-        // int characterHealth = 100;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        public string name
+        {
+            get;
+            set;
+        }
         
+        public int health;
+
+        public int Health 
+        {
+            get { return health; }
+            set 
+            { 
+                if (value > 100) health = 100;
+                else if (value < 0) health = 0;
+                else health = value;
+            }
+        }
+
+        public Character(string name,int health)
+        {
+            this.name = name;
+            this.health = health;
+        }
+
     }
-}
+ 
 }
